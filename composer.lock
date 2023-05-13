@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e440ac5f063e75ec5b722453530c5c63",
+    "content-hash": "7c64aef5f660bd222e906056b9e97ebc",
     "packages": [
         {
             "name": "brick/math",
@@ -2101,6 +2101,61 @@
                 }
             ],
             "time": "2022-04-17T13:12:02+00:00"
+        },
+        {
+            "name": "midsmr/laravel-angular",
+            "version": "1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/midsmr/laravel-angular.git",
+                "reference": "b1457a931327c9906dd993b4dfb5c7712bb8af83"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/midsmr/laravel-angular/zipball/b1457a931327c9906dd993b4dfb5c7712bb8af83",
+                "reference": "b1457a931327c9906dd993b4dfb5c7712bb8af83",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "^9.0|^10.0",
+                "php": "^8.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Midsmr\\LaravelAngular\\LaravelAngularServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Midsmr\\LaravelAngular\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jerry",
+                    "email": "midsmr@qq.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Bootstrap Angular Template For Laravel",
+            "homepage": "https://github.com/midsmr/laravel-angular",
+            "keywords": [
+                "laravel",
+                "laravel-angular",
+                "midsmr"
+            ],
+            "support": {
+                "issues": "https://github.com/midsmr/laravel-angular/issues",
+                "source": "https://github.com/midsmr/laravel-angular/tree/1.0.4"
+            },
+            "time": "2023-05-12T11:37:14+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -8278,7 +8333,8 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^8.1"
+        "php": "^8.1",
+        "ext-pdo": "*"
     },
     "platform-dev": [],
     "plugin-api-version": "2.3.0"
