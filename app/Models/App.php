@@ -15,4 +15,9 @@ class App extends Model
     protected $casts = [
         'status' => AppStatus::class
     ];
+
+    public function urls(): \Illuminate\Database\Eloquent\Relations\HasMany
+    {
+        return $this->hasMany(Url::class);
+    }
 }

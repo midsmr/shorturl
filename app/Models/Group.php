@@ -10,4 +10,9 @@ class Group extends Model
     use HasFactory;
 
     protected $guarded = ['id'];
+
+    public function users(): \Illuminate\Database\Eloquent\Relations\HasMany
+    {
+        return $this->hasMany(User::class);
+    }
 }

@@ -15,4 +15,9 @@ class Url extends Model
     protected $casts = [
         'status' => UrlStatus::class
     ];
+
+    public function app(): \Illuminate\Database\Eloquent\Relations\BelongsTo
+    {
+        return $this->belongsTo(App::class);
+    }
 }
