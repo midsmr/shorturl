@@ -20,6 +20,7 @@ return new class extends Migration
             $table->unsignedBigInteger('balance')->default(0);
             $table->rememberToken();
             $table->longText('remarks');
+            $table->integer('status')->default(\App\Enums\UserStatus::Active->value);
             $table->timestamps();
         });
     }
