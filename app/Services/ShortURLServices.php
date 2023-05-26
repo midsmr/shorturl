@@ -13,7 +13,7 @@ class ShortURLServices
         $result = '';
 
         while ($id > self::$scale - 1) {
-            $remainder = (int)$id % self::$scale;
+            $remainder = $id % self::$scale;
             $result = $result . substr(self::$chars, $remainder, 1);
             $id = $id / self::$scale;
         }
@@ -21,7 +21,7 @@ class ShortURLServices
         return strrev($result);
     }
 
-    public static function decode(string $value)
+    public static function decode(string $value): int
     {
         $value = ltrim($value, '0');
         $id = 0;
