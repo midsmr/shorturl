@@ -1,0 +1,12 @@
+<x-angular::auth>
+    <x-slot:mainTitle>{{config('sys.title')}}</x-slot:mainTitle>
+    <x-slot:keywords>{{config('sys.keywords')}}</x-slot:keywords>
+    <x-slot:description>{{config('sys.description')}}</x-slot:description>
+    <x-slot:title>@yield('title')</x-slot:title>
+    <x-slot:style>@yield('style')</x-slot:style>
+    <x-slot>@yield('content')</x-slot>
+    <x-slot:footer>
+        <x-angular::auth-footer>Jerry(midsmr@qq.com)</x-angular::auth-footer>
+    </x-slot:footer>
+    <x-slot:scripts>@yield('scripts')</x-slot:scripts>
+</x-angular::auth>
